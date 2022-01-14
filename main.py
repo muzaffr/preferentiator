@@ -11,10 +11,10 @@ class Item:
 
     def __lt__(self, item):
         while True:
-            res = input("{} vs. {}?\n(L or R): ".format(self, item)).upper()
-            if res == 'L':
+            res = input("{} vs. {}?\n(1 or 2): ".format(self, item))
+            if res == '1':
                 return False
-            elif res == 'R':
+            elif res == '2':
                 return True
             else:
                 print("\nInvalid selection.")
